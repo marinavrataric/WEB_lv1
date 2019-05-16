@@ -1,0 +1,316 @@
+body{
+	margin: 0;
+	font-family: 'Didact Gothic', sans-serif;	
+}
+
+/*LOGO I NAVIGACIJSKI LINKOVI*/
+.navBar{
+	background-color: #2F2F2A;
+	width: 100%;
+	height: 60px;
+	position: relative;
+}
+
+.logo img{
+	width: 90px;
+	height: 60px;
+	position: absolute;
+	left: 15px;
+}
+
+.links{
+	position: absolute;
+	margin: auto;
+	right: 10px;
+}
+
+.ul-link{
+	list-style-type: none;
+}
+
+.link{
+	float: right;
+	padding: 5px;
+}
+
+.link a{
+	text-decoration: none;
+	display: block;
+	color: white;
+}
+
+.link a:hover{
+	color: lightgreen;
+}
+
+/*HEADER S GLAVNOM SLIKOM*/
+.header img{
+	height: 240px;
+	width: 100%;
+}
+
+/*MAIN DIO*/
+.main{
+	text-align: center;
+}
+hr{
+	border: #94CAA2 3px solid; 
+}
+.slika{
+	display: inline-block;
+	margin: 10px;
+}
+.slika img{
+	width: 160px;
+	height: 120px;
+}
+
+/*SECTION DIO*/
+.section{
+	text-align: center;
+}
+hr{
+	border: #94CAA2 3px solid; 
+}
+.slika2{
+	display: inline-block;
+}
+.slika2 img{
+	width: 160px;
+	height: 120px;
+	margin: 15px 10px 0 10px;
+}
+.slika2 p{
+	width: 160px;
+	height: 120px;
+	text-align: justify;
+	margin: 0 10px;	
+}
+
+/*KRATKI SECTION*/
+.kratkisection{
+	background-color: #2F2F2A;
+	text-align-last: center;
+}
+.kratkisection h2{
+	color: white;
+	padding-top: 10px;
+}
+.kratkisection button{
+	margin-bottom: 15px;
+}
+
+/*SUBMIT FORM AND MAP*/
+.submitform{
+	text-align: center;
+}
+.submitform button{
+	margin: 15px;
+}
+input{
+	width: 250px;
+}
+.lbl{
+	height: 200px;
+	width: 250px;
+}
+.map img{
+	height: 250px;
+	width: 100%;
+}
+
+/*KRATKI SECTION 2*/
+.p1, .p2{
+	text-align: justify;
+	margin: 30px;
+}
+
+/*FOOTER*/
+.footer{
+	background-color: #2F2F2A;
+	color: white;
+}
+
+/*FOOTER LEFT*/
+.left{
+	float: left;
+	width: 50%;
+}
+.left h2{
+	color: white;
+	text-align: center;
+}
+.leftlinks{
+	float: left;
+	width: 50%;
+}
+.rightlinks{
+	float: right;
+	width: 50%;
+}
+.ul-flink{
+	list-style-type: none;
+	float: right;
+}
+.ul-rlink{
+	list-style-type: none;
+	float: left;
+}
+.flink{
+	padding: 3px;
+}
+.flink a{
+	text-decoration: none;
+	display: block;
+	color: white;
+}
+.flink a:hover{
+	color: lightgreen;
+}
+
+/*FOOTER RIGHT*/
+.right{
+	float: right;
+	width: 50%;
+}
+.ficon{
+	display: inline-block;
+	background-color: red;
+}
+.ficon a{
+	font-size: 20px;
+}
+.fa {
+  text-decoration: none;
+  margin: 2px 5px;
+}
+.fa:hover{
+	opacity: 0.7;
+	color: #94CAA2;
+}
+.fa-facebook, .fa-youtube, .fa-instagram, .fa-pinterest {
+  	color: white;
+}
+
+/*FOOTER BOTTOM*/
+.bottom{
+	clear: both;
+}
+.bottom p{
+	text-align: center;
+	padding: 10px;
+}
+
+
+
+/*TABLET 768x912*/
+@media only screen and (min-width: 768px) { 
+	.header img{
+		height: 330px;
+	}
+	.kratkisection button{
+		padding: 6px 15px;
+	}
+	.submitform, .map{
+		display: inline-block;
+		width: 30%;
+		padding: 2% 10%;
+		margin: 0;
+	}
+	.map{
+		float: right;
+		background-color: red;
+	}
+	.map img{
+		width: 100%;
+	}
+	.p1, .p2{
+		display: inline-block;
+		width: 30%;
+		padding: 2% 10%;
+		margin: 0;
+	}
+	.p2{
+		float: right;
+	}
+}
+
+
+/*LAPTOP 1024x1216 */
+@media only screen and (min-width: 1024px) {
+	.header img{
+		height: 420px;
+	}
+	.slika img{
+		width: 260px;
+		height: 190px;
+	}
+	.slika2 img{
+		width: 260px;
+		height: 190px;
+	}
+	.slika2 p{
+		width: 260px;
+		height: 190px;
+	}
+	.kratkisection button{
+		padding: 6px 20px;
+	}
+	.ficon a{
+		font-size: 25px;
+	}
+}
+
+@media only screen and (min-width: 1440px) {
+	.header img{
+		height: 530px;
+	}
+	.slika img{
+		width: 380px;
+		height: 270px;
+	}
+	.slika2 img{
+		width: 380px;
+		height: 270px;
+	}
+	.slika2 p{
+		width: 380px;
+		height: 270px;
+	}
+	p{		
+		font-size: 18px;
+	}
+	h2{
+		font-size: 30px;
+	}
+	h4{
+		font-size: 22px;
+	}
+	.submitform button{
+		padding: 10px 18px;
+		font-size: 16px;
+	}
+	input{
+		width: 400px;
+	}
+	input{
+		height: 30px;
+	}
+	.lbl{
+		height: 300px;
+		width: 400px;
+	}
+	h3{
+		font-size: 28px;
+	}
+	.link a{
+		font-size: 20px;
+		padding: 0 20px;
+	}
+	.logo img{
+		left: 35px;
+	}
+	.ficon a{
+		font-size: 30px;
+	}
+}
